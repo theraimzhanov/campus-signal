@@ -1,0 +1,1237 @@
+{
+  "tools": [
+    {
+      "slug": "chatgpt",
+      "title": "ChatGPT",
+      "category": "General assistants",
+      "source_url": "https://chatgpt.com/",
+      "summary": "Work through explanations, coding questions and draft ideas in a conversation.",
+      "description": "Work through explanations, coding questions and draft ideas in a conversation. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "General assistants",
+        "Student use"
+      ],
+      "use_examples": [
+        "Explain an unfamiliar algorithm with a worked example",
+        "Turn your own notes into practice questions",
+        "Draft tests for a small function"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "claude",
+      "title": "Claude",
+      "category": "General assistants",
+      "source_url": "https://claude.ai/",
+      "summary": "Discuss documents, software and complex questions with an AI assistant.",
+      "description": "Discuss documents, software and complex questions with an AI assistant. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "General assistants",
+        "Student use"
+      ],
+      "use_examples": [
+        "Review a function and identify edge cases",
+        "Compare arguments in papers you supply",
+        "Plan a small software project"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "gemini",
+      "title": "Gemini",
+      "category": "General assistants",
+      "source_url": "https://gemini.google.com/",
+      "summary": "Explore ideas and ask questions with Google’s AI assistant.",
+      "description": "Explore ideas and ask questions with Google’s AI assistant. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "General assistants",
+        "Student use"
+      ],
+      "use_examples": [
+        "Generate alternative explanations of a CS concept",
+        "Brainstorm test cases",
+        "Compare approaches to a class project"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "github-copilot",
+      "title": "GitHub Copilot",
+      "category": "Coding",
+      "source_url": "https://github.com/features/copilot",
+      "summary": "Use an AI coding assistant alongside your development workflow.",
+      "description": "Use an AI coding assistant alongside your development workflow. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Coding",
+        "Student use"
+      ],
+      "use_examples": [
+        "Suggest unit tests inside your editor",
+        "Explain code in a new repository",
+        "Draft a small implementation and review it"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "cursor",
+      "title": "Cursor",
+      "category": "Coding",
+      "source_url": "https://cursor.com/",
+      "summary": "Explore AI assistance in a code editor built around working with repositories.",
+      "description": "Explore AI assistance in a code editor built around working with repositories. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Coding",
+        "Student use"
+      ],
+      "use_examples": [
+        "Navigate an unfamiliar project",
+        "Make a small change across files",
+        "Explain a compiler error"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "replit",
+      "title": "Replit",
+      "category": "App building",
+      "source_url": "https://replit.com/",
+      "summary": "Develop and share software projects from a browser-based environment.",
+      "description": "Develop and share software projects from a browser-based environment. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "App building",
+        "Student use"
+      ],
+      "use_examples": [
+        "Prototype a club event page",
+        "Build a small API experiment",
+        "Share a runnable portfolio demo"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "v0",
+      "title": "v0",
+      "category": "App building",
+      "source_url": "https://v0.app/",
+      "summary": "Explore a tool for turning interface ideas into application prototypes.",
+      "description": "Explore a tool for turning interface ideas into application prototypes. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "App building",
+        "Student use"
+      ],
+      "use_examples": [
+        "Prototype a student dashboard",
+        "Explore alternative form layouts",
+        "Build an interface to connect to your own backend"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "lovable",
+      "title": "Lovable",
+      "category": "App building",
+      "source_url": "https://lovable.dev/",
+      "summary": "Explore conversational app prototyping and development.",
+      "description": "Explore conversational app prototyping and development. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "App building",
+        "Student use"
+      ],
+      "use_examples": [
+        "Prototype a study group directory",
+        "Draft a working interface from a product brief",
+        "Iterate on a small student project"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "hugging-face",
+      "title": "Hugging Face",
+      "category": "Open models",
+      "source_url": "https://huggingface.co/",
+      "summary": "Discover model repositories, datasets and demos in an open ML ecosystem.",
+      "description": "Discover model repositories, datasets and demos in an open ML ecosystem. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Intermediate",
+      "tags": [
+        "Open models",
+        "Student use"
+      ],
+      "use_examples": [
+        "Compare model cards for a task",
+        "Try a public demonstration",
+        "Find a dataset with appropriate licensing"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "ollama",
+      "title": "Ollama",
+      "category": "Open models",
+      "source_url": "https://ollama.com/",
+      "summary": "Explore running supported language models on your own computer.",
+      "description": "Explore running supported language models on your own computer. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Intermediate",
+      "tags": [
+        "Open models",
+        "Student use"
+      ],
+      "use_examples": [
+        "Test a local study assistant",
+        "Compare local models on the same questions",
+        "Experiment with a local app integration"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "lm-studio",
+      "title": "LM Studio",
+      "category": "Open models",
+      "source_url": "https://lmstudio.ai/",
+      "summary": "Explore local language models through a desktop application.",
+      "description": "Explore local language models through a desktop application. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Intermediate",
+      "tags": [
+        "Open models",
+        "Student use"
+      ],
+      "use_examples": [
+        "Try a compatible model locally",
+        "Compare response quality on a fixed task",
+        "Understand hardware and memory tradeoffs"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "perplexity",
+      "title": "Perplexity",
+      "category": "Research",
+      "source_url": "https://www.perplexity.ai/",
+      "summary": "Explore questions through a search-oriented AI interface with source links.",
+      "description": "Explore questions through a search-oriented AI interface with source links. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Research",
+        "Student use"
+      ],
+      "use_examples": [
+        "Find starting points for a literature search",
+        "Trace an answer back to its cited page",
+        "Compare coverage across original sources"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "notebooklm",
+      "title": "NotebookLM",
+      "category": "Research",
+      "source_url": "https://notebooklm.google/",
+      "summary": "Work with questions and summaries grounded in sources you provide.",
+      "description": "Work with questions and summaries grounded in sources you provide. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Research",
+        "Student use"
+      ],
+      "use_examples": [
+        "Create a study guide from permitted materials",
+        "Ask questions about your own notes",
+        "Identify topics to revisit before an exam"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "elicit",
+      "title": "Elicit",
+      "category": "Research",
+      "source_url": "https://elicit.com/",
+      "summary": "Explore AI assistance for finding and organizing research literature.",
+      "description": "Explore AI assistance for finding and organizing research literature. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Research",
+        "Student use"
+      ],
+      "use_examples": [
+        "Create a reading shortlist",
+        "Compare paper methods",
+        "Organize findings before reading the full papers"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "consensus",
+      "title": "Consensus",
+      "category": "Research",
+      "source_url": "https://consensus.app/",
+      "summary": "Explore research questions with an AI-assisted scientific search tool.",
+      "description": "Explore research questions with an AI-assisted scientific search tool. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Research",
+        "Student use"
+      ],
+      "use_examples": [
+        "Locate research on a narrow question",
+        "Read the underlying evidence",
+        "Compare findings across papers"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "n8n",
+      "title": "n8n",
+      "category": "Automation",
+      "source_url": "https://n8n.io/",
+      "summary": "Connect services into workflows that run on triggers and schedules.",
+      "description": "Connect services into workflows that run on triggers and schedules. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Automation",
+        "Student use"
+      ],
+      "use_examples": [
+        "Collect an official RSS feed",
+        "Send structured data to a database",
+        "Build a review queue with retries"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "dify",
+      "title": "Dify",
+      "category": "Automation",
+      "source_url": "https://dify.ai/",
+      "summary": "Explore building and operating AI application workflows.",
+      "description": "Explore building and operating AI application workflows. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Automation",
+        "Student use"
+      ],
+      "use_examples": [
+        "Prototype a document question-answering flow",
+        "Compare prompts in a controlled workflow",
+        "Build a small internal assistant"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "flowise",
+      "title": "Flowise",
+      "category": "Automation",
+      "source_url": "https://flowiseai.com/",
+      "summary": "Explore visual construction of AI workflows and assistants.",
+      "description": "Explore visual construction of AI workflows and assistants. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Automation",
+        "Student use"
+      ],
+      "use_examples": [
+        "Sketch a retrieval workflow",
+        "Connect an assistant to a permitted source",
+        "Experiment with evaluation steps"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "canva",
+      "title": "Canva",
+      "category": "Design & media",
+      "source_url": "https://www.canva.com/",
+      "summary": "Explore visual creation tools with AI-assisted features.",
+      "description": "Explore visual creation tools with AI-assisted features. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Design & media",
+        "Student use"
+      ],
+      "use_examples": [
+        "Create presentation draft layouts",
+        "Prepare a project poster",
+        "Design visuals for a student club"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "adobe-firefly",
+      "title": "Adobe Firefly",
+      "category": "Design & media",
+      "source_url": "https://firefly.adobe.com/",
+      "summary": "Explore generative visual tools and inspect the provider’s usage terms.",
+      "description": "Explore generative visual tools and inspect the provider’s usage terms. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Design & media",
+        "Student use"
+      ],
+      "use_examples": [
+        "Prototype an original visual concept",
+        "Create a moodboard for a student project",
+        "Explore image variations"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "elevenlabs",
+      "title": "ElevenLabs",
+      "category": "Audio",
+      "source_url": "https://elevenlabs.io/",
+      "summary": "Explore AI audio and speech tools with consent and attribution in mind.",
+      "description": "Explore AI audio and speech tools with consent and attribution in mind. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Audio",
+        "Student use"
+      ],
+      "use_examples": [
+        "Create narration using a permitted voice",
+        "Prototype accessible spoken instructions",
+        "Test a voice interface with non-sensitive text"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "whisper",
+      "title": "Whisper",
+      "category": "Audio",
+      "source_url": "https://github.com/openai/whisper",
+      "summary": "Explore an open speech-recognition project and its documentation.",
+      "description": "Explore an open speech-recognition project and its documentation. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Beginner",
+      "tags": [
+        "Audio",
+        "Student use"
+      ],
+      "use_examples": [
+        "Transcribe a recording you have permission to use",
+        "Evaluate transcription errors",
+        "Prototype searchable lecture notes"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "pytorch",
+      "title": "PyTorch",
+      "category": "Machine learning",
+      "source_url": "https://pytorch.org/",
+      "summary": "Build and experiment with machine-learning models in a programming framework.",
+      "description": "Build and experiment with machine-learning models in a programming framework. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Intermediate",
+      "tags": [
+        "Machine learning",
+        "Student use"
+      ],
+      "use_examples": [
+        "Train a small classifier",
+        "Compare training and validation results",
+        "Learn to inspect model errors"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    },
+    {
+      "slug": "scikit-learn",
+      "title": "scikit-learn",
+      "category": "Machine learning",
+      "source_url": "https://scikit-learn.org/",
+      "summary": "Explore standard machine-learning methods and evaluation tools.",
+      "description": "Explore standard machine-learning methods and evaluation tools. Start with a small task you understand, read the official documentation, and test the result against a known example. This entry is an independently written starting guide, not a provider endorsement.",
+      "pricing": "Check provider",
+      "level": "Intermediate",
+      "tags": [
+        "Machine learning",
+        "Student use"
+      ],
+      "use_examples": [
+        "Build a baseline classifier",
+        "Compare models on held-out data",
+        "Learn preprocessing without data leakage"
+      ],
+      "limitations": "AI output can be incorrect or incomplete. Review code, verify citations, protect private data, and check current pricing, licenses and institutional rules at the original source.",
+      "status": "published"
+    }
+  ],
+  "use_cases": [
+    {
+      "slug": "study-assistant",
+      "title": "Turn your notes into a study assistant",
+      "category": "Study & productivity",
+      "duration": "45–90 minutes",
+      "tool_slugs": [
+        "notebooklm",
+        "chatgpt"
+      ],
+      "deliverable": "A practice quiz and answer checklist based on notes you are allowed to use.",
+      "prompt": "Create 8 practice questions from the notes below. Include a source reference for each answer. Flag anything not supported by the notes. Ask me one question at a time.",
+      "level": "Beginner",
+      "summary": "A practice quiz and answer checklist based on notes you are allowed to use.",
+      "steps": [
+        {
+          "title": "Define one small outcome",
+          "body": "Write down the intended result: A practice quiz and answer checklist based on notes you are allowed to use. Decide who will use it and what you can finish in the stated time."
+        },
+        {
+          "title": "Choose your inputs and tool",
+          "body": "Open the suggested tools and read their official starting guides. Use a minimal, non-sensitive example. Check access, hardware and license requirements."
+        },
+        {
+          "title": "Build the smallest complete version",
+          "body": "Use the starter prompt below as a plan. Work one step at a time, inspect each output, and keep your own notes on decisions and changes."
+        },
+        {
+          "title": "Test with examples you understand",
+          "body": "Try a successful case, a missing-input case and a misleading-input case. Compare the output to original evidence or a known answer. Record limitations."
+        },
+        {
+          "title": "Make it yours and share responsibly",
+          "body": "Review the result, add a README with setup steps and real screenshots, cite your sources, and remove secrets and private information before sharing."
+        }
+      ],
+      "cautions": "Follow your course rules. Never upload personal, confidential or copyrighted material without permission. Verify AI output, cite real sources, and describe your own contribution honestly.",
+      "status": "published"
+    },
+    {
+      "slug": "first-portfolio",
+      "title": "Build a portfolio you can explain",
+      "category": "Web development",
+      "duration": "A weekend",
+      "tool_slugs": [
+        "replit",
+        "v0",
+        "github-copilot"
+      ],
+      "deliverable": "A responsive portfolio with three projects, an about page and a README.",
+      "prompt": "Help me plan a student developer portfolio. Start with a page outline and accessible HTML structure. Ask about my real projects. Do not invent credentials or experience.",
+      "level": "Beginner",
+      "summary": "A responsive portfolio with three projects, an about page and a README.",
+      "steps": [
+        {
+          "title": "Define one small outcome",
+          "body": "Write down the intended result: A responsive portfolio with three projects, an about page and a README. Decide who will use it and what you can finish in the stated time."
+        },
+        {
+          "title": "Choose your inputs and tool",
+          "body": "Open the suggested tools and read their official starting guides. Use a minimal, non-sensitive example. Check access, hardware and license requirements."
+        },
+        {
+          "title": "Build the smallest complete version",
+          "body": "Use the starter prompt below as a plan. Work one step at a time, inspect each output, and keep your own notes on decisions and changes."
+        },
+        {
+          "title": "Test with examples you understand",
+          "body": "Try a successful case, a missing-input case and a misleading-input case. Compare the output to original evidence or a known answer. Record limitations."
+        },
+        {
+          "title": "Make it yours and share responsibly",
+          "body": "Review the result, add a README with setup steps and real screenshots, cite your sources, and remove secrets and private information before sharing."
+        }
+      ],
+      "cautions": "Follow your course rules. Never upload personal, confidential or copyrighted material without permission. Verify AI output, cite real sources, and describe your own contribution honestly.",
+      "status": "published"
+    },
+    {
+      "slug": "research-map",
+      "title": "Make a map of a research topic",
+      "category": "Research",
+      "duration": "2–3 hours",
+      "tool_slugs": [
+        "elicit",
+        "perplexity",
+        "consensus"
+      ],
+      "deliverable": "A reading matrix of five papers with research questions, methods, limitations and source links.",
+      "prompt": "Help me structure a literature reading matrix for [topic]. Suggest search terms and inclusion criteria. Separate verified paper details from things I still need to read. Do not invent citations.",
+      "level": "Beginner",
+      "summary": "A reading matrix of five papers with research questions, methods, limitations and source links.",
+      "steps": [
+        {
+          "title": "Define one small outcome",
+          "body": "Write down the intended result: A reading matrix of five papers with research questions, methods, limitations and source links. Decide who will use it and what you can finish in the stated time."
+        },
+        {
+          "title": "Choose your inputs and tool",
+          "body": "Open the suggested tools and read their official starting guides. Use a minimal, non-sensitive example. Check access, hardware and license requirements."
+        },
+        {
+          "title": "Build the smallest complete version",
+          "body": "Use the starter prompt below as a plan. Work one step at a time, inspect each output, and keep your own notes on decisions and changes."
+        },
+        {
+          "title": "Test with examples you understand",
+          "body": "Try a successful case, a missing-input case and a misleading-input case. Compare the output to original evidence or a known answer. Record limitations."
+        },
+        {
+          "title": "Make it yours and share responsibly",
+          "body": "Review the result, add a README with setup steps and real screenshots, cite your sources, and remove secrets and private information before sharing."
+        }
+      ],
+      "cautions": "Follow your course rules. Never upload personal, confidential or copyrighted material without permission. Verify AI output, cite real sources, and describe your own contribution honestly.",
+      "status": "published"
+    },
+    {
+      "slug": "debugging-lab",
+      "title": "Build a debugging partner, not a crutch",
+      "category": "Coding",
+      "duration": "60–90 minutes",
+      "tool_slugs": [
+        "claude",
+        "github-copilot"
+      ],
+      "deliverable": "A bug report, failing regression test and explained fix for one real bug.",
+      "prompt": "I will share a small bug and a failing example. First help me reproduce it, then propose hypotheses. Do not rewrite the program before we identify the cause. Include a regression test.",
+      "level": "Beginner",
+      "summary": "A bug report, failing regression test and explained fix for one real bug.",
+      "steps": [
+        {
+          "title": "Define one small outcome",
+          "body": "Write down the intended result: A bug report, failing regression test and explained fix for one real bug. Decide who will use it and what you can finish in the stated time."
+        },
+        {
+          "title": "Choose your inputs and tool",
+          "body": "Open the suggested tools and read their official starting guides. Use a minimal, non-sensitive example. Check access, hardware and license requirements."
+        },
+        {
+          "title": "Build the smallest complete version",
+          "body": "Use the starter prompt below as a plan. Work one step at a time, inspect each output, and keep your own notes on decisions and changes."
+        },
+        {
+          "title": "Test with examples you understand",
+          "body": "Try a successful case, a missing-input case and a misleading-input case. Compare the output to original evidence or a known answer. Record limitations."
+        },
+        {
+          "title": "Make it yours and share responsibly",
+          "body": "Review the result, add a README with setup steps and real screenshots, cite your sources, and remove secrets and private information before sharing."
+        }
+      ],
+      "cautions": "Follow your course rules. Never upload personal, confidential or copyrighted material without permission. Verify AI output, cite real sources, and describe your own contribution honestly.",
+      "status": "published"
+    },
+    {
+      "slug": "campus-bot",
+      "title": "Prototype a campus FAQ assistant",
+      "category": "AI applications",
+      "duration": "A weekend",
+      "tool_slugs": [
+        "hugging-face",
+        "dify",
+        "flowise"
+      ],
+      "deliverable": "A small assistant answering from a permitted set of campus information with citations.",
+      "prompt": "Design a FAQ assistant restricted to the supplied sources. Each answer must cite a source passage. If the answer is missing, say so. Explain how to evaluate unsupported answers.",
+      "level": "Intermediate",
+      "summary": "A small assistant answering from a permitted set of campus information with citations.",
+      "steps": [
+        {
+          "title": "Define one small outcome",
+          "body": "Write down the intended result: A small assistant answering from a permitted set of campus information with citations. Decide who will use it and what you can finish in the stated time."
+        },
+        {
+          "title": "Choose your inputs and tool",
+          "body": "Open the suggested tools and read their official starting guides. Use a minimal, non-sensitive example. Check access, hardware and license requirements."
+        },
+        {
+          "title": "Build the smallest complete version",
+          "body": "Use the starter prompt below as a plan. Work one step at a time, inspect each output, and keep your own notes on decisions and changes."
+        },
+        {
+          "title": "Test with examples you understand",
+          "body": "Try a successful case, a missing-input case and a misleading-input case. Compare the output to original evidence or a known answer. Record limitations."
+        },
+        {
+          "title": "Make it yours and share responsibly",
+          "body": "Review the result, add a README with setup steps and real screenshots, cite your sources, and remove secrets and private information before sharing."
+        }
+      ],
+      "cautions": "Follow your course rules. Never upload personal, confidential or copyrighted material without permission. Verify AI output, cite real sources, and describe your own contribution honestly.",
+      "status": "published"
+    },
+    {
+      "slug": "local-ai",
+      "title": "Try your first local language model",
+      "category": "Open models",
+      "duration": "1–2 hours",
+      "tool_slugs": [
+        "ollama",
+        "lm-studio"
+      ],
+      "deliverable": "A local model experiment log covering memory needs, response time and ten test questions.",
+      "prompt": "Help me design a fair comparison of two local models for [task]. Use the same ten questions. Measure correctness, latency and resource use. Do not assume my hardware.",
+      "level": "Intermediate",
+      "summary": "A local model experiment log covering memory needs, response time and ten test questions.",
+      "steps": [
+        {
+          "title": "Define one small outcome",
+          "body": "Write down the intended result: A local model experiment log covering memory needs, response time and ten test questions. Decide who will use it and what you can finish in the stated time."
+        },
+        {
+          "title": "Choose your inputs and tool",
+          "body": "Open the suggested tools and read their official starting guides. Use a minimal, non-sensitive example. Check access, hardware and license requirements."
+        },
+        {
+          "title": "Build the smallest complete version",
+          "body": "Use the starter prompt below as a plan. Work one step at a time, inspect each output, and keep your own notes on decisions and changes."
+        },
+        {
+          "title": "Test with examples you understand",
+          "body": "Try a successful case, a missing-input case and a misleading-input case. Compare the output to original evidence or a known answer. Record limitations."
+        },
+        {
+          "title": "Make it yours and share responsibly",
+          "body": "Review the result, add a README with setup steps and real screenshots, cite your sources, and remove secrets and private information before sharing."
+        }
+      ],
+      "cautions": "Follow your course rules. Never upload personal, confidential or copyrighted material without permission. Verify AI output, cite real sources, and describe your own contribution honestly.",
+      "status": "published"
+    },
+    {
+      "slug": "rss-digest",
+      "title": "Automate a useful tech reading list",
+      "category": "Automation",
+      "duration": "2–4 hours",
+      "tool_slugs": [
+        "n8n"
+      ],
+      "deliverable": "A scheduled RSS-to-database workflow with duplicate handling and an error log.",
+      "prompt": "Plan an n8n workflow that reads an official RSS feed, validates HTTPS links, deduplicates by URL, and stores titles and source links in a database. Include retries and failure reporting.",
+      "level": "Beginner",
+      "summary": "A scheduled RSS-to-database workflow with duplicate handling and an error log.",
+      "steps": [
+        {
+          "title": "Define one small outcome",
+          "body": "Write down the intended result: A scheduled RSS-to-database workflow with duplicate handling and an error log. Decide who will use it and what you can finish in the stated time."
+        },
+        {
+          "title": "Choose your inputs and tool",
+          "body": "Open the suggested tools and read their official starting guides. Use a minimal, non-sensitive example. Check access, hardware and license requirements."
+        },
+        {
+          "title": "Build the smallest complete version",
+          "body": "Use the starter prompt below as a plan. Work one step at a time, inspect each output, and keep your own notes on decisions and changes."
+        },
+        {
+          "title": "Test with examples you understand",
+          "body": "Try a successful case, a missing-input case and a misleading-input case. Compare the output to original evidence or a known answer. Record limitations."
+        },
+        {
+          "title": "Make it yours and share responsibly",
+          "body": "Review the result, add a README with setup steps and real screenshots, cite your sources, and remove secrets and private information before sharing."
+        }
+      ],
+      "cautions": "Follow your course rules. Never upload personal, confidential or copyrighted material without permission. Verify AI output, cite real sources, and describe your own contribution honestly.",
+      "status": "published"
+    },
+    {
+      "slug": "data-story",
+      "title": "Turn a public dataset into a story",
+      "category": "Data science",
+      "duration": "A weekend",
+      "tool_slugs": [
+        "pytorch",
+        "scikit-learn",
+        "chatgpt"
+      ],
+      "deliverable": "A reproducible notebook, three charts and a short limitations statement.",
+      "prompt": "Help me explore this dataset. First inspect its schema and missing data. Propose three questions that the data can actually answer. Avoid causal claims from correlations.",
+      "level": "Intermediate",
+      "summary": "A reproducible notebook, three charts and a short limitations statement.",
+      "steps": [
+        {
+          "title": "Define one small outcome",
+          "body": "Write down the intended result: A reproducible notebook, three charts and a short limitations statement. Decide who will use it and what you can finish in the stated time."
+        },
+        {
+          "title": "Choose your inputs and tool",
+          "body": "Open the suggested tools and read their official starting guides. Use a minimal, non-sensitive example. Check access, hardware and license requirements."
+        },
+        {
+          "title": "Build the smallest complete version",
+          "body": "Use the starter prompt below as a plan. Work one step at a time, inspect each output, and keep your own notes on decisions and changes."
+        },
+        {
+          "title": "Test with examples you understand",
+          "body": "Try a successful case, a missing-input case and a misleading-input case. Compare the output to original evidence or a known answer. Record limitations."
+        },
+        {
+          "title": "Make it yours and share responsibly",
+          "body": "Review the result, add a README with setup steps and real screenshots, cite your sources, and remove secrets and private information before sharing."
+        }
+      ],
+      "cautions": "Follow your course rules. Never upload personal, confidential or copyrighted material without permission. Verify AI output, cite real sources, and describe your own contribution honestly.",
+      "status": "published"
+    },
+    {
+      "slug": "interview-practice",
+      "title": "Practice explaining your coding decisions",
+      "category": "Careers",
+      "duration": "30 minutes",
+      "tool_slugs": [
+        "chatgpt",
+        "claude"
+      ],
+      "deliverable": "A recorded practice explanation and an improvement checklist for a solution you wrote.",
+      "prompt": "Act as a patient technical interviewer. Ask me to explain my solution, complexity and edge cases. Give hints only when I request them. End with feedback on clarity, not a hiring prediction.",
+      "level": "Beginner",
+      "summary": "A recorded practice explanation and an improvement checklist for a solution you wrote.",
+      "steps": [
+        {
+          "title": "Define one small outcome",
+          "body": "Write down the intended result: A recorded practice explanation and an improvement checklist for a solution you wrote. Decide who will use it and what you can finish in the stated time."
+        },
+        {
+          "title": "Choose your inputs and tool",
+          "body": "Open the suggested tools and read their official starting guides. Use a minimal, non-sensitive example. Check access, hardware and license requirements."
+        },
+        {
+          "title": "Build the smallest complete version",
+          "body": "Use the starter prompt below as a plan. Work one step at a time, inspect each output, and keep your own notes on decisions and changes."
+        },
+        {
+          "title": "Test with examples you understand",
+          "body": "Try a successful case, a missing-input case and a misleading-input case. Compare the output to original evidence or a known answer. Record limitations."
+        },
+        {
+          "title": "Make it yours and share responsibly",
+          "body": "Review the result, add a README with setup steps and real screenshots, cite your sources, and remove secrets and private information before sharing."
+        }
+      ],
+      "cautions": "Follow your course rules. Never upload personal, confidential or copyrighted material without permission. Verify AI output, cite real sources, and describe your own contribution honestly.",
+      "status": "published"
+    },
+    {
+      "slug": "accessible-voice",
+      "title": "Create an accessible audio walkthrough",
+      "category": "Accessibility",
+      "duration": "2–3 hours",
+      "tool_slugs": [
+        "elevenlabs",
+        "whisper"
+      ],
+      "deliverable": "A short audio guide with a reviewed transcript and clear written alternative.",
+      "prompt": "Help me write a concise accessible audio walkthrough for [interface]. Use clear directions without relying on color alone. Include a transcript. Use only voices I have permission to use.",
+      "level": "Beginner",
+      "summary": "A short audio guide with a reviewed transcript and clear written alternative.",
+      "steps": [
+        {
+          "title": "Define one small outcome",
+          "body": "Write down the intended result: A short audio guide with a reviewed transcript and clear written alternative. Decide who will use it and what you can finish in the stated time."
+        },
+        {
+          "title": "Choose your inputs and tool",
+          "body": "Open the suggested tools and read their official starting guides. Use a minimal, non-sensitive example. Check access, hardware and license requirements."
+        },
+        {
+          "title": "Build the smallest complete version",
+          "body": "Use the starter prompt below as a plan. Work one step at a time, inspect each output, and keep your own notes on decisions and changes."
+        },
+        {
+          "title": "Test with examples you understand",
+          "body": "Try a successful case, a missing-input case and a misleading-input case. Compare the output to original evidence or a known answer. Record limitations."
+        },
+        {
+          "title": "Make it yours and share responsibly",
+          "body": "Review the result, add a README with setup steps and real screenshots, cite your sources, and remove secrets and private information before sharing."
+        }
+      ],
+      "cautions": "Follow your course rules. Never upload personal, confidential or copyrighted material without permission. Verify AI output, cite real sources, and describe your own contribution honestly.",
+      "status": "published"
+    },
+    {
+      "slug": "hackathon-plan",
+      "title": "Go from hackathon idea to a build plan",
+      "category": "Hackathons",
+      "duration": "45 minutes",
+      "tool_slugs": [
+        "claude",
+        "replit"
+      ],
+      "deliverable": "A scoped 24-hour plan with a working demo target, roles, risks and a fallback.",
+      "prompt": "We are a student team at a 24-hour hackathon. Our skills are [skills]. Help us scope [idea] to one end-to-end feature. Include a demo script, ethical risks, and a fallback if an API fails.",
+      "level": "Beginner",
+      "summary": "A scoped 24-hour plan with a working demo target, roles, risks and a fallback.",
+      "steps": [
+        {
+          "title": "Define one small outcome",
+          "body": "Write down the intended result: A scoped 24-hour plan with a working demo target, roles, risks and a fallback. Decide who will use it and what you can finish in the stated time."
+        },
+        {
+          "title": "Choose your inputs and tool",
+          "body": "Open the suggested tools and read their official starting guides. Use a minimal, non-sensitive example. Check access, hardware and license requirements."
+        },
+        {
+          "title": "Build the smallest complete version",
+          "body": "Use the starter prompt below as a plan. Work one step at a time, inspect each output, and keep your own notes on decisions and changes."
+        },
+        {
+          "title": "Test with examples you understand",
+          "body": "Try a successful case, a missing-input case and a misleading-input case. Compare the output to original evidence or a known answer. Record limitations."
+        },
+        {
+          "title": "Make it yours and share responsibly",
+          "body": "Review the result, add a README with setup steps and real screenshots, cite your sources, and remove secrets and private information before sharing."
+        }
+      ],
+      "cautions": "Follow your course rules. Never upload personal, confidential or copyrighted material without permission. Verify AI output, cite real sources, and describe your own contribution honestly.",
+      "status": "published"
+    },
+    {
+      "slug": "project-poster",
+      "title": "Tell the story of your project",
+      "category": "Design & media",
+      "duration": "1–2 hours",
+      "tool_slugs": [
+        "canva",
+        "adobe-firefly"
+      ],
+      "deliverable": "An original project poster with a real problem, method, evidence and link to the demo.",
+      "prompt": "Help me outline a student project poster. Use only the supplied project facts. Make room for the problem, method, real results, limitations and a demo link. Do not fabricate metrics.",
+      "level": "Beginner",
+      "summary": "An original project poster with a real problem, method, evidence and link to the demo.",
+      "steps": [
+        {
+          "title": "Define one small outcome",
+          "body": "Write down the intended result: An original project poster with a real problem, method, evidence and link to the demo. Decide who will use it and what you can finish in the stated time."
+        },
+        {
+          "title": "Choose your inputs and tool",
+          "body": "Open the suggested tools and read their official starting guides. Use a minimal, non-sensitive example. Check access, hardware and license requirements."
+        },
+        {
+          "title": "Build the smallest complete version",
+          "body": "Use the starter prompt below as a plan. Work one step at a time, inspect each output, and keep your own notes on decisions and changes."
+        },
+        {
+          "title": "Test with examples you understand",
+          "body": "Try a successful case, a missing-input case and a misleading-input case. Compare the output to original evidence or a known answer. Record limitations."
+        },
+        {
+          "title": "Make it yours and share responsibly",
+          "body": "Review the result, add a README with setup steps and real screenshots, cite your sources, and remove secrets and private information before sharing."
+        }
+      ],
+      "cautions": "Follow your course rules. Never upload personal, confidential or copyrighted material without permission. Verify AI output, cite real sources, and describe your own contribution honestly.",
+      "status": "published"
+    }
+  ],
+  "learning_tracks": [
+    {
+      "slug": "ai-foundations",
+      "title": "AI foundations: start from zero",
+      "summary": "Understand the vocabulary, what models can do, and where human judgment matters.",
+      "level": "Beginner",
+      "duration": "About 90 minutes",
+      "modules": [
+        {
+          "title": "AI, machine learning and generative AI",
+          "paragraphs": [
+            "Artificial intelligence is a broad name for computer systems that perform tasks associated with intelligence. Machine learning is one approach: a system learns patterns from data instead of having every rule written by hand.",
+            "Generative models produce new outputs such as text, images or audio based on patterns learned during training. An impressive answer is not proof of understanding or truth. The right first question is: what can I test?"
+          ],
+          "exercise": "Write one example each of a rule-based program, a predictive model and a generative model. Explain how you would test each.",
+          "source_url": "https://developers.google.com/machine-learning/crash-course"
+        },
+        {
+          "title": "How a language model writes",
+          "paragraphs": [
+            "A language model generates sequences of tokens, which are pieces of text. It uses the context available to it to estimate what can follow. It does not automatically consult a trusted database of facts every time it answers.",
+            "Training, the information in your prompt, retrieval from external sources, and tools are different mechanisms. Ask whether an answer comes from the supplied source, a tool result or unsupported generation."
+          ],
+          "exercise": "Ask a model about an invented library function. Check the official documentation before trusting its answer.",
+          "source_url": "https://huggingface.co/learn/llm-course/chapter1/1"
+        },
+        {
+          "title": "Your first useful prompt",
+          "paragraphs": [
+            "Start with a task, relevant context, constraints and the output you need. A clear prompt reduces ambiguity but cannot guarantee correctness. Show a small example when the format matters.",
+            "Try a short task you already understand. Revise the instructions based on a specific failure rather than adding a long list of generic commands."
+          ],
+          "exercise": "Ask for an explanation of binary search. Add a concrete array and ask the model to walk through each iteration. Check it yourself.",
+          "source_url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+        },
+        {
+          "title": "Check the answer before using it",
+          "paragraphs": [
+            "Models can produce fluent errors, invented citations and insecure code. Verification should match the task: run tests for code, read cited sources for research, and recompute important numerical results.",
+            "When there is uncertainty, record it. For high-stakes decisions, use a qualified person and the relevant authoritative evidence. Do not treat model confidence as a reliability measure."
+          ],
+          "exercise": "Make a checklist for verifying a code answer, a factual answer and a research summary.",
+          "source_url": "https://www.nist.gov/itl/ai-risk-management-framework"
+        },
+        {
+          "title": "Use AI responsibly as a student",
+          "paragraphs": [
+            "Your institution and course determine what assistance is allowed. Keep records of assistance, acknowledge it when required, and make sure you can explain the final work.",
+            "Protect other people’s data. Do not upload personal information, unpublished research, credentials or private code unless you are authorized and understand how the provider handles it."
+          ],
+          "exercise": "Write your personal three-rule AI study policy. Include verification, attribution and privacy.",
+          "source_url": "https://www.unesco.org/en/artificial-intelligence/education"
+        }
+      ]
+    },
+    {
+      "slug": "prompting-in-practice",
+      "title": "Prompting that survives real work",
+      "summary": "Turn vague requests into repeatable tasks, examples and checks.",
+      "level": "Beginner",
+      "duration": "About 75 minutes",
+      "modules": [
+        {
+          "title": "Describe the job, not a magic phrase",
+          "paragraphs": [
+            "A prompt is an instruction interface. Specify the task, the intended reader, relevant inputs and a useful output format. Avoid roleplay claims that promise expertise without evidence.",
+            "Work with small inputs so you can see what changed after each revision."
+          ],
+          "exercise": "Turn “help me study” into a prompt with a subject, time limit, question format and feedback rule.",
+          "source_url": "https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview"
+        },
+        {
+          "title": "Use examples to define the format",
+          "paragraphs": [
+            "Examples show what you mean more concretely than adjectives like “good” or “professional.” Include a representative input and the matching output.",
+            "Do not include real private records in examples. A synthetic example can define structure without exposing information."
+          ],
+          "exercise": "Create two examples for turning a meeting note into a task list. Include a note with no actionable task.",
+          "source_url": "https://ai.google.dev/gemini-api/docs/prompting-strategies"
+        },
+        {
+          "title": "Ground answers in supplied sources",
+          "paragraphs": [
+            "Provide the evidence the task should use. Ask the model to separate statements supported by that evidence from unanswered questions.",
+            "A source reference only helps if it points to a real passage supporting the claim. Open and check the references."
+          ],
+          "exercise": "Provide a short article you may use. Ask for three claims with exact supporting passages, then verify each.",
+          "source_url": "https://huggingface.co/learn/llm-course/chapter1/1"
+        },
+        {
+          "title": "Build a tiny evaluation set",
+          "paragraphs": [
+            "Choose a small collection of examples before tuning the prompt. Include common inputs, ambiguous inputs and failure cases. Define success in a way another person could check.",
+            "A prompt that works on one example can still fail on the real task. Save prompt versions and compare them against the same examples."
+          ],
+          "exercise": "Write five test inputs for a study-question generator and a checklist for acceptable outputs.",
+          "source_url": "https://www.nist.gov/itl/ai-risk-management-framework"
+        }
+      ]
+    },
+    {
+      "slug": "ai-assisted-coding",
+      "title": "Code with AI and keep understanding",
+      "summary": "Use assistance for debugging and tests while owning your implementation.",
+      "level": "Beginner",
+      "duration": "About 2 hours",
+      "modules": [
+        {
+          "title": "Read before you generate",
+          "paragraphs": [
+            "Start with the repository README, entry points and existing tests. Ask for an explanation of a small part instead of an immediate rewrite.",
+            "You remain responsible for the result. Be able to explain every change you accept."
+          ],
+          "exercise": "Choose a small open repository. Trace one input from entry point to output.",
+          "source_url": "https://docs.github.com/en/copilot"
+        },
+        {
+          "title": "Write a failing example first",
+          "paragraphs": [
+            "A reproducible example narrows debugging. State expected and actual behavior, input, environment and exact error. Ask for hypotheses before edits.",
+            "Use a regression test so a future change does not silently bring the bug back."
+          ],
+          "exercise": "Write a failing test for a function that mishandles an empty input, then fix the function.",
+          "source_url": "https://docs.python.org/3/library/unittest.html"
+        },
+        {
+          "title": "Review generated code",
+          "paragraphs": [
+            "Check correctness, unsafe input handling, dependencies, licensing and secrets. Run the normal build and tests. A tool’s explanation is not independent verification.",
+            "Prefer small changes you can review. Separate generated suggestions from accepted code in your reasoning notes."
+          ],
+          "exercise": "Review a generated input parser with malformed, long and missing inputs.",
+          "source_url": "https://owasp.org/www-project-top-ten/"
+        },
+        {
+          "title": "Document what you built",
+          "paragraphs": [
+            "A good project README explains the problem, setup, usage, tests and known limitations. Include only results you actually observed.",
+            "A portfolio is stronger when you can discuss tradeoffs and failures, including where assistance was used."
+          ],
+          "exercise": "Write a five-section README for a small project and run its setup from a fresh folder.",
+          "source_url": "https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes"
+        }
+      ]
+    },
+    {
+      "slug": "automation-basics",
+      "title": "Your first reliable automation",
+      "summary": "Learn triggers, APIs, structured data, duplicate handling and safe retries.",
+      "level": "Beginner",
+      "duration": "About 2 hours",
+      "modules": [
+        {
+          "title": "Triggers and actions",
+          "paragraphs": [
+            "A workflow starts from a trigger, such as a schedule or webhook, and runs actions. Make the output of each step explicit.",
+            "Choose one source and one useful destination before building a complex chain."
+          ],
+          "exercise": "Draw a workflow that reads an RSS feed every day and stores article URLs.",
+          "source_url": "https://docs.n8n.io/workflows/"
+        },
+        {
+          "title": "Read an API response",
+          "paragraphs": [
+            "An API exposes a documented interface. Inspect status codes and JSON structure. Know which fields are required and which may be absent.",
+            "Use official APIs and authorized source pages. Keep credentials in the workflow credential store, not in code or output logs."
+          ],
+          "exercise": "Read a public JSON endpoint and list required, optional and unknown fields.",
+          "source_url": "https://docs.n8n.io/integrations/builtin/core-nodes/n8n-nodes-base.httprequest/"
+        },
+        {
+          "title": "Avoid duplicates and silent failures",
+          "paragraphs": [
+            "Choose a stable identity, such as an original URL or source ID. An upsert updates an existing item instead of creating a duplicate on every run.",
+            "Retry transient failures with a bound. A failed fetch is not evidence that a source item has closed or disappeared."
+          ],
+          "exercise": "Run the same import twice. Confirm that the number of unique source URLs does not increase.",
+          "source_url": "https://docs.n8n.io/flow-logic/error-handling/"
+        },
+        {
+          "title": "Separate collection from publication",
+          "paragraphs": [
+            "Collection produces candidates. Validation checks structure and source constraints. Review decides what should be public when important information is uncertain.",
+            "Keep the original link and collection time so a user can verify the record. Monitor source failures instead of hiding them."
+          ],
+          "exercise": "Design a pending-review state and identify three reasons to hold a collected item.",
+          "source_url": "https://supabase.com/docs/guides/database/postgres/row-level-security"
+        }
+      ]
+    },
+    {
+      "slug": "machine-learning-basics",
+      "title": "From data to a first ML model",
+      "summary": "Build a baseline, split data correctly and evaluate what the model actually learned.",
+      "level": "Intermediate",
+      "duration": "A weekend",
+      "modules": [
+        {
+          "title": "Start with a question and a baseline",
+          "paragraphs": [
+            "Define what you want to predict, what input is available at prediction time, and how the prediction will be used. Start with a simple baseline before using a complex model.",
+            "A useful metric depends on the task. Accuracy alone may be misleading for an imbalanced dataset."
+          ],
+          "exercise": "Choose an open dataset and write a baseline rule you can compare models against.",
+          "source_url": "https://scikit-learn.org/stable/getting_started.html"
+        },
+        {
+          "title": "Split before you learn from the data",
+          "paragraphs": [
+            "Separate training data from validation and test data. Fit preprocessing on training data only. Leakage can make a model appear better than it is.",
+            "Time-dependent and grouped data often require a split that respects time or groups rather than random rows."
+          ],
+          "exercise": "Describe a leakage risk in a student-performance dataset and how to prevent it.",
+          "source_url": "https://scikit-learn.org/stable/common_pitfalls.html"
+        },
+        {
+          "title": "Train a small model",
+          "paragraphs": [
+            "Use a simple model with a reproducible random seed where relevant. Record features, preprocessing and parameter choices. Keep a final test set untouched while iterating.",
+            "Larger models are not automatically better for a small dataset or limited hardware."
+          ],
+          "exercise": "Train a baseline model and record validation results with the code needed to reproduce them.",
+          "source_url": "https://pytorch.org/tutorials/beginner/basics/intro.html"
+        },
+        {
+          "title": "Inspect the mistakes",
+          "paragraphs": [
+            "Look at the kinds of errors the model makes, not just a single metric. Check whether errors differ across important groups and inputs.",
+            "Document the dataset’s limits and avoid using a student experiment to make consequential decisions about people."
+          ],
+          "exercise": "Inspect ten wrong predictions and write an honest model limitations section.",
+          "source_url": "https://scikit-learn.org/stable/modules/model_evaluation.html"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "name": "Hugging Face Blog",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "method": "Official RSS · every 12 hours",
+      "notes": "Article titles and original links; source metadata is published with attribution."
+    },
+    {
+      "name": "Greenhouse employer boards",
+      "url": "https://docs.greenhouse.io/job-board.html",
+      "method": "Official public Job Board API · every 12 hours",
+      "notes": "CS internship candidates from configured employer boards. Eligibility and deadlines are never invented."
+    },
+    {
+      "name": "Major League Hacking",
+      "url": "https://www.mlh.com/seasons/2027/events",
+      "method": "Public season page · daily",
+      "notes": "Upcoming event candidates; collector validates the page structure and preserves original organizer links."
+    },
+    {
+      "name": "GitHub open-source AI projects",
+      "url": "https://docs.github.com/en/rest/search/search#search-repositories",
+      "method": "Official public repository search API · daily",
+      "notes": "AI tool candidates from repository metadata enter moderation. Stars are a discovery signal, not an editorial rating."
+    },
+    {
+      "name": "Campus Signal editorial library",
+      "url": "https://github.com/theraimzhanov/campus-signal",
+      "method": "Original guides and curated official provider links",
+      "notes": "Independent beginner lessons and use cases. Tool prices and capabilities must be checked with the provider."
+    }
+  ]
+}

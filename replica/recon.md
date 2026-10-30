@@ -1,45 +1,28 @@
-# Replica recon: Handshake → Campus Signal
+# Replica recon: Futurepedia → CS student platform
 
-Scope authorized by user: web discovery of opportunities for CS students, with an original design and additional AI/project discovery. Research date: 2026-10-30. Public reading only; no account access, crawler, source bundles, private endpoints, or proprietary assets.
+User scope: web platform with accounts, categorized AI tools, practical use cases, beginner learning and student opportunities. Research: 2026-10-30. Replaces the earlier one-page Handshake scope.
 
-## Sources
-| Source | Evidence |
+| Public source | Evidence |
 |---|---|
-| https://joinhandshake.com/students/ | Career discovery, events and AI learning positioning |
-| https://support.joinhandshake.com/hc/en-us/articles/218693408-Searching-for-Jobs-and-Internships | Search, location, job types, work arrangements, eligibility, sorting and cards |
+| https://www.futurepedia.io/ | Tool stacks, workflow library, onboarding and progress positioning |
+| https://www.futurepedia.io/ai-tools | Category hierarchy |
+| https://www.futurepedia.io/ai-tools/code-assistant | Cards, category results, sort controls, pagination and saves |
+| https://www.futurepedia.io/tool/claude | Overview, examples, pricing, limits and provider destination |
 
-The events help URL attempted during research was unavailable and is not evidence. No logged-in screens or mobile states were tested. Product behavior described in documentation is distinguished from direct observation below.
+No login, competitor bundle/code/private API, licensed asset, rating, review, directory dataset or copied wording was used. Authenticated features are inferred from public positioning, not observed.
 
-## Screen inventory
-| ID | Screen | Evidence | Components / states |
-|---|---|---|---|
-| S01 | Public student landing page | Observed public page | Navigation, signup CTA, career/AI/event sections; populated state |
-| S02 | Jobs discovery | Public help documentation | Search, filters, results, sorting; actual account UI not inspected |
-| S03 | Listing details | Inferred destination of discovery | Detail and apply destination; unverified layout |
-| S04 | Career preferences/profile | Help documentation | Interests and qualifications; account required |
-| S05 | Events discovery | Marketing mention only | Career events; details and filters unverified |
+Screen inventory: S01 landing (sections and onboarding); S02 categories (category groups); S03 category results (cards/sort/pagination); S04 tool detail (uses/pricing/source); S05 personalized plan (advertised only).
 
-## User flows
-F01: S01 → signup → S04 → S02. Account steps untested; exact click count unknown.
-F02: S02 → search/filter → matching results → S03 → provider application. Filtering documented; application steps not observed.
-F03: S01 → events discovery (S05). Event registration flow unverified.
-Campus Signal implemented flow: discovery → optional keyword/category/location → details → official source (2 clicks from discovery without filters).
-Edge cases: no matching results, no bookmarks, malformed stored bookmarks, database outage, unknown eligibility, unavailable deadline, unsafe source URL.
+Flows: F01 home→categories→results→detail→provider, four public transitions. F02 sorting controls observed; ranking formula unknown. F03 saves/counts observed; authenticated save flow untested. F04 role/goals/constraints→plan advertised, not executed.
 
-## Components
-Navigation, keyword input, category controls, location filter, sort select, resource card, bookmark toggle, detail dialog, empty state, data-source status.
+Our additional flows: F05 signup/login/recovery; F06 cloud bookmarks; F07 lessons/progress; F08 project recipes; F09 opportunity search/detail/source; F10 collection; F11 submission/moderation.
 
-## Inferred data model
-Opportunity(title, organization, location, type, qualifications, compensation, deadline): high confidence in field concepts from help article; backend structure unknown.
-Student(profile, interests, saved items): medium confidence; actual storage unknown.
-Event(title, host, schedule): low confidence from marketing only.
-Campus Signal adds category, source_url, verified_at, moderation status, versions and collection runs; these are our design decisions, not claims about Handshake.
+Our 26 page types: discover, tools, tool detail, use cases, recipe detail, learning index, lesson reader, opportunities, internships, hackathons, events/research, opportunity detail, AI briefing, search, registration, login, recovery, password update, callback, dashboard, saved collection, profile, submission, moderation, sources and privacy.
 
-## Original design
-Campus Signal uses a quiet green editorial desk, serif accent headline, typographic arrow artwork, independent cards and an AI briefing sidebar. No Handshake layout, name, logos, screenshots or copy shipped. The user requested a complete visual change, so pixel parity is intentionally out of scope.
+Repeated components: sidebar, global search, breadcrumbs, filters, cards, pagination, save controls, forms, source links, recipe steps, prompt copy, lesson disclosures, progress indicators, moderation decisions, empty/loading/error/denied states.
 
-## Scope and size
-5 source screen concepts / 3 source flows; MVP implements one discovery page with details and saved view. M for a reviewed live pilot; larger platform remains L. Hardest parts: authorized source coverage, changes/duplicate handling across sources, truthful eligibility and freshness. Excluded: employer network, university agreements, original listings database, recruiter messaging, in-platform applications and proprietary AI courses.
+Inferred model: Tool(name/category/provider/pricing/use cases/save totals) and Category hierarchy have high conceptual confidence; physical storage unknown. User/save has medium confidence; personalized plans low confidence. Campus Signal independently designs its own schema.
 
-## Delivered versus pending
-Working starter directory, local bookmarks, filters, source links and details. Supabase schema/RLS/history and 4 importable n8n workflows prepared. Database activation, n8n credentials and schedules, live ingestion and real popularity remain pending. Starter resources are explicitly labelled; no fictional open vacancies or popularity counts.
+Excluded: competitor content, ratings, users, paid courses, editorial verification and exact design. No claim to cover every AI tool/website. Popularity uses our actual aggregate saves. New design is intentional.
+
+Size: L for a public production platform. First integrated release implements the routes and data layer; email delivery, moderation provisioning, n8n activation and scaling require explicit completion checks. See backend.md.

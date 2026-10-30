@@ -1,0 +1,3 @@
+import http from 'node:http';
+import app from '../worker/index.js';
+http.createServer(async(req,res)=>{try{const origin='http://127.0.0.1:4173';const body=['GET','HEAD'].includes(req.method)?undefined:await new Promise(resolve=>{let x='';req.on('data',c=>x+=c);req.on('end',()=>resolve(x))});const response=await app.fetch(new Request(origin+req.url,{method:req.method,headers:req.headers,body}));res.writeHead(response.status,Object.fromEntries(response.headers));res.end(Buffer.from(await response.arrayBuffer()))}catch{res.writeHead(500);res.end('Preview failed')}}).listen(4173,'127.0.0.1',()=>console.log('Local: http://127.0.0.1:4173'));

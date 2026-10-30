@@ -1,0 +1,69 @@
+{
+  "name": "Campus Signal | collector failure log",
+  "nodes": [
+    {
+      "id": "collection-failure",
+      "name": "Collection failure",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "log-redacted-failure",
+      "name": "Log redacted failure",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        0
+      ],
+      "parameters": {
+        "url": "https://dtkrcefozqhhyhvspxbx.supabase.co/functions/v1/campus-ingest",
+        "method": "POST",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ {action:\"error\"} }}",
+        "options": {
+          "timeout": 60000
+        }
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "LxkM3qnrdRXN1ehQ",
+          "name": "Campus Signal ingestion"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 3000
+    }
+  ],
+  "connections": {
+    "Collection failure": {
+      "main": [
+        [
+          {
+            "node": "Log redacted failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Chicago",
+    "saveDataSuccessExecution": "none",
+    "saveDataErrorExecution": "all",
+    "executionTimeout": 300
+  },
+  "active": false,
+  "pinData": {}
+}
