@@ -1,0 +1,128 @@
+{
+  "name": "Campus Signal | AI feed to review queue",
+  "nodes": [
+    {
+      "id": "schedule",
+      "name": "Schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        240
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 12
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "read-ai-feed",
+      "name": "Read AI feed",
+      "type": "n8n-nodes-base.rssFeedRead",
+      "typeVersion": 1.1,
+      "position": [
+        220,
+        240
+      ],
+      "parameters": {
+        "url": "https://huggingface.co/blog/feed.xml",
+        "options": {}
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 3000
+    },
+    {
+      "id": "normalize-feed",
+      "name": "Normalize feed",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        240
+      ],
+      "parameters": {
+        "jsCode": "return $input.all().slice(0,30).map(({json:r})=>{const u=new URL(r.link);if(u.protocol!=='https:'||u.hostname!=='huggingface.co')throw Error('Unexpected feed URL');return {json:{title:String(r.title).slice(0,300),organization:'Hugging Face Blog',category:'AI & tech',location:'Remote',summary:'New article from the official Hugging Face blog. Open the original for the full story; editorial summary pending review.',source_url:u.href,tags:['Official feed','Review required']}}});"
+      }
+    },
+    {
+      "id": "store-pending-listing",
+      "name": "Store pending listing",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        240
+      ],
+      "parameters": {
+        "url": "={{ $vars.CAMPUS_SUPABASE_URL + '/rest/v1/rpc/ingest_listing' }}",
+        "method": "POST",
+        "options": {
+          "timeout": 30000
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { record: $json } }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpCustomAuth"
+      },
+      "credentials": {
+        "httpCustomAuth": {
+          "name": "Campus Signal Supabase service"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 3000
+    }
+  ],
+  "connections": {
+    "Schedule": {
+      "main": [
+        [
+          {
+            "node": "Read AI feed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read AI feed": {
+      "main": [
+        [
+          {
+            "node": "Normalize feed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize feed": {
+      "main": [
+        [
+          {
+            "node": "Store pending listing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Chicago",
+    "saveDataSuccessExecution": "none",
+    "saveDataErrorExecution": "none"
+  },
+  "pinData": {}
+}

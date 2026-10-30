@@ -31,4 +31,3 @@ This is a discovery MVP, not the complete large platform: no student accounts, n
 
 ## Repository
 Public source repository: https://github.com/theraimzhanov/campus-signal. The private Sites deployment has its own source repository. Database and n8n activation remain pending as described above.
-

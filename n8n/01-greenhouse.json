@@ -1,0 +1,131 @@
+{
+  "name": "Campus Signal | approved employer internships",
+  "nodes": [
+    {
+      "id": "schedule",
+      "name": "Schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        240
+      ],
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 6
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "fetch-employer-jobs",
+      "name": "Fetch employer jobs",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        220,
+        240
+      ],
+      "parameters": {
+        "url": "={{ 'https://boards-api.greenhouse.io/v1/boards/' + encodeURIComponent($vars.CAMPUS_GREENHOUSE_BOARD) + '/jobs' }}",
+        "method": "GET",
+        "options": {
+          "timeout": 30000
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 3000
+    },
+    {
+      "id": "normalize-internships",
+      "name": "Normalize internships",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        240
+      ],
+      "parameters": {
+        "jsCode": "const jobs=$input.first().json.jobs;if(!Array.isArray(jobs))throw Error('Expected Greenhouse jobs array');return jobs.filter(j=>/intern|co.op|student/i.test(j.title||'')&&/software|engineer|data|computer|security|machine learning/i.test(j.title||'')).map(j=>{const u=new URL(j.absolute_url);if(u.protocol!=='https:')throw Error('HTTPS required');return {json:{title:j.title.slice(0,300),organization:$vars.CAMPUS_EMPLOYER_NAME,category:'Internship',location:j.location?.name||'Unknown',summary:'Official employer listing. Read the source for eligibility, compensation, and deadlines.',source_url:u.href,tags:['Employer source','Review required']}}});"
+      }
+    },
+    {
+      "id": "store-pending-listing",
+      "name": "Store pending listing",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        660,
+        240
+      ],
+      "parameters": {
+        "url": "={{ $vars.CAMPUS_SUPABASE_URL + '/rest/v1/rpc/ingest_listing' }}",
+        "method": "POST",
+        "options": {
+          "timeout": 30000
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ { record: $json } }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpCustomAuth"
+      },
+      "credentials": {
+        "httpCustomAuth": {
+          "name": "Campus Signal Supabase service"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 3000
+    }
+  ],
+  "connections": {
+    "Schedule": {
+      "main": [
+        [
+          {
+            "node": "Fetch employer jobs",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch employer jobs": {
+      "main": [
+        [
+          {
+            "node": "Normalize internships",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize internships": {
+      "main": [
+        [
+          {
+            "node": "Store pending listing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Chicago",
+    "saveDataSuccessExecution": "none",
+    "saveDataErrorExecution": "none"
+  },
+  "pinData": {}
+}

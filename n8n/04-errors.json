@@ -1,0 +1,91 @@
+{
+  "name": "Campus Signal | private failure log",
+  "nodes": [
+    {
+      "id": "workflow-error",
+      "name": "Workflow error",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        240
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "redact-error",
+      "name": "Redact error",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        220,
+        240
+      ],
+      "parameters": {
+        "jsCode": "return [{json:{workflow:$json.workflow?.name||'Unknown',result:'failed: inspect source connectivity and credential configuration; payload omitted'}}];"
+      }
+    },
+    {
+      "id": "store-failure",
+      "name": "Store failure",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        440,
+        240
+      ],
+      "parameters": {
+        "url": "={{ $vars.CAMPUS_SUPABASE_URL + '/rest/v1/collection_runs' }}",
+        "method": "POST",
+        "options": {
+          "timeout": 30000
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ $json }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpCustomAuth"
+      },
+      "credentials": {
+        "httpCustomAuth": {
+          "name": "Campus Signal Supabase service"
+        }
+      },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 3000
+    }
+  ],
+  "connections": {
+    "Workflow error": {
+      "main": [
+        [
+          {
+            "node": "Redact error",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Redact error": {
+      "main": [
+        [
+          {
+            "node": "Store failure",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "America/Chicago",
+    "saveDataSuccessExecution": "none",
+    "saveDataErrorExecution": "none"
+  },
+  "pinData": {}
+}

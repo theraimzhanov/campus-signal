@@ -1,0 +1,15 @@
+feature,area,priority,original,clone,notes
+Search,discovery,must,yes,yes,Keyword across text and tags
+Category filters,discovery,must,yes,yes,CS specific categories
+Location filters,discovery,must,yes,yes,Directory region filter
+Details and source link,discovery,must,yes,yes,Independent detail dialog
+Saved resources,discovery,should,unknown,yes,Local device only
+Newest sorting,discovery,should,yes,yes,Live data timestamps required
+Popularity,ranking,should,unknown,partial,Schema supports editorial score; no engagement pipeline
+Eligibility filters,discovery,should,yes,no,Not inferred from missing source data
+AI learning resources,learning,should,yes,yes,Official resources not copied courses
+Live AI news,news,should,unknown,partial,RSS workflow prepared; pending credential setup
+Database and history,backend,must,unknown,partial,Schema ready not applied
+Source ingestion,automation,must,unknown,partial,Importable workflows not live tested
+University employer network,network,could,yes,skip,Original relationships excluded
+Recruiter messaging,network,could,yes,skip,Not part of authorized MVP
