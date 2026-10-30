@@ -6,7 +6,7 @@ Original CS student discovery website, informed by public Handshake research. No
 Serve `dist/` with any static server, e.g. `python -m http.server 4173 --directory dist`. No npm dependencies. Bookmarks are local to the browser and do not sync across devices.
 
 ## Supabase activation
-No existing Supabase project was modified. Create a separate project, run `supabase/schema.sql` once in its SQL editor, and set `supabaseUrl` and `publishableKey` in `dist/config.js`. Use only the publishable key in the frontend. Review RLS with Supabase advisors before a public launch. Public clients can read only published, unexpired records. No public insert/update policy exists.
+Campus Signal now uses its own Supabase project `dtkrcefozqhhyhvspxbx`. The schema is applied and eight official resource-directory links are stored as published records; these are not verified open vacancies. The website uses a publishable key with read-only public access. n8n remains inactive pending instance access. For a separate installation, create a project and run `supabase/schema.sql` once in its SQL editor, and set `supabaseUrl` and `publishableKey` in `dist/config.js`. Use only the publishable key in the frontend. Review RLS with Supabase advisors before a public launch. Public clients can read only published, unexpired records. No public insert/update policy exists.
 
 Only trusted service credentials can collect, moderate, expire and archive records. Review records in Supabase Table Editor before setting `status=published`. Verify source permissions, eligibility, location and deadlines yourself. Pending collection is not a claim that a vacancy is open. Popularity defaults to zero; engagement collection and personalized rankings are future work.
 
